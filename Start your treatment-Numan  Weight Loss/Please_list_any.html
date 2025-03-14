@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Numan | Weight Loss</title>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@700;800&display=swap"rel="stylesheet"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/custom-font.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+      </head>
+<body>
+
+
+
+
+
+
+    <!-- ==================================================================coding Start====================================================================================================== -->
+
+
+
+
+    <!-- ===================================================================header section Start=============================================================================================  -->
+
+    <section class="header">
+        <div class="container">
+            <div class="header_content">
+                <div class="header_logo">
+                    <div class="logo_image">
+                        <a href=""><img src="asset/numan-logo.svg" style="height: 65px;" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================================================header section End================================================================================================  -->
+
+
+    <!--================================================================== How old are you section start ============================================================================================================-->
+
+
+    <section class="how_old ">
+                        <div class="mixed">
+                            <div class="bar">
+                                <div class="progress_bar">
+                                    <div class="nambar">
+                                        <span>25%</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <form id="ethnicityForm">
+                                <label for="ethnicity">Please list any other medical conditions you have. <br> <br> Our clinicians need to know your full medical history to make sure our weight loss plan is safe for you.</label>
+                                <textarea id="ethnicity" name="ethnicity" placeholder="My health conditions are..."></textarea>
+                                <p id="error-message" class="error-message">Please provide an answer before continuing.</p>
+                                <div class="buttons">
+                                    <button type="button" class="back"><a style="text-decoration: none;
+                                    color: #000;" href="medical_conditions.html">Back</a></button>
+                                    <button type="submit" class="next" id="" ><a href="medications.html" style="text-decoration: none;color: #000;" >Next →</a></button>
+                                </div>
+                            </form>
+                        </div>
+    </section>
+
+
+
+    <!--================================================================== How old are you section End ============================================================================================================-->
+
+
+
+    <!-- ==================================================================coding End======================================================================================================== -->
+
+
+    
+
+
+
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/lazyload.min.js"></script>
+    <script type="text/javascript" src="js/theme.js"></script>
+    <script src="js/my.js"></script>
+
+
+
+    <script>
+        document.getElementById("yesBtn").addEventListener("click", function() {
+            this.classList.add("active");
+            document.getElementById("noBtn").classList.remove("active");
+        });
+        
+        document.getElementById("noBtn").addEventListener("click", function() {
+            this.classList.add("active");
+            document.getElementById("yesBtn").classList.remove("active");
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("ethnicityForm");
+            const textarea = document.getElementById("ethnicity");
+            const errorMessage = document.getElementById("error-message");
+
+            form.addEventListener("submit", function (event) {
+                if (textarea.value.trim() === "") {
+                    event.preventDefault(); // Prevent form submission
+                    textarea.classList.add("error-border");
+                    errorMessage.style.display = "block";
+                } else {
+                    textarea.classList.remove("error-border");
+                    errorMessage.style.display = "none";
+                    window.location.href = "nextpage.html"; // Redirect to next page
+                }
+            });
+
+            textarea.addEventListener("input", function () {
+                if (textarea.value.trim() !== "") {
+                    textarea.classList.remove("error-border");
+                    errorMessage.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+<script>
+    document.getElementById('Next').addEventListener('click', function() {
+// Redirect to a new page when the label is clicked
+window.location.href = "asian.html"; // Replace with your desired page URL
+});
+
+</script>
+
+
+
+
+    
+</body>
+</html>

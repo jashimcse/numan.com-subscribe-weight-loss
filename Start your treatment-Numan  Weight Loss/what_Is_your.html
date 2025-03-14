@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Numan | Weight Loss</title>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@700;800&display=swap"rel="stylesheet"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/custom-font.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+      </head>
+<body>
+
+
+
+
+
+
+    <!-- ==================================================================coding Start====================================================================================================== -->
+
+
+
+
+    <!-- ===================================================================header section Start=============================================================================================  -->
+
+    <section class="header">
+        <div class="container">
+            <div class="header_content">
+                <div class="header_logo">
+                    <div class="logo_image">
+                        <a href=""><img src="asset/numan-logo.svg" style="height: 65px;" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================================================header section End================================================================================================  -->
+
+
+    <!--================================================================== How old are you section start ============================================================================================================-->
+
+
+    <section class="how_old">
+       <div class="contanier">
+        <div class="what_Is_your">
+            <div class="progress_bar">
+                <div class="nambar">
+                    <span>8%</span>
+                </div>
+                
+            </div>
+            <h2>What is your weight?</h2>
+            <div class="weight-inputs">
+                <input type="text" id="kg-input" placeholder="Kg">
+                <div class="st_lbs" id="st-lbs-inputs" style="display: none;">
+                    <input type="text" placeholder="St"> 
+                    <input type="text" placeholder="Lbs">
+                </div>
+            </div>
+            <div class="unit-selector unit_selector">
+                <label><input type="radio" name="unit" value="kg" checked>kg</label>
+                <label><input type="radio" name="unit" value="st-lbs"> st/lbs</label>
+            </div>
+            <div class="buttons">
+                <button class="back"><a href="asian.html" style="text-decoration: none;color: #000;" >Back</a></button>
+                <button class="next"><a href="your_height.html" style="text-decoration: none;color: #000;" >Next →</button>
+            </div>
+        </div>
+
+       </div>
+
+    </section>
+    <!--================================================================== How old are you section End ============================================================================================================-->
+
+
+
+    <!-- ==================================================================coding End======================================================================================================== -->
+
+
+
+
+
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/lazyload.min.js"></script>
+    <script type="text/javascript" src="js/theme.js"></script>
+    <script src="js/my.js"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const kgInput = document.getElementById("kg-input");
+            const stLbsInputs = document.getElementById("st-lbs-inputs");
+            const unitRadios = document.querySelectorAll("input[name='unit']");
+
+            unitRadios.forEach(radio => {
+                radio.addEventListener("change", function() {
+                    if (this.value === "st-lbs") {
+                        kgInput.style.display = "none";
+                        stLbsInputs.style.display = "flex";
+                    } else {
+                        kgInput.style.display = "block";
+                        stLbsInputs.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

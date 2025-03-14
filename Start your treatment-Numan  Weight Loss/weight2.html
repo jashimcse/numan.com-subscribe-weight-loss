@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Numan | Weight Loss</title>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@700;800&display=swap"rel="stylesheet"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/custom-font.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+      </head>
+<body>
+
+
+
+
+
+
+    <!-- ==================================================================coding Start====================================================================================================== -->
+
+
+
+
+    <!-- ===================================================================header section Start=============================================================================================  -->
+
+    <section class="header">
+        <div class="container">
+            <div class="header_content">
+                <div class="header_logo">
+                    <div class="logo_image">
+                        <a href=""><img src="asset/numan-logo.svg" style="height: 65px;" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================================================header section End================================================================================================  -->
+
+
+    <!--================================================================== What is your weight section start ============================================================================================================-->
+    <section class="statements_apply">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="statement_content">
+                        <div class="top_contents">
+                            <div class="progress_bar">
+                                <p class="Percent_text">14%</p><span class="bar_line"></span>
+                            </div>
+                            <h5>Do any of the following statements apply to you?</h5>
+                            <h5>
+                                These conditions can lead to serious complications when losing weight or taking weight loss medications.
+                            </h5>
+                        </div>
+                        <!--////////////========chekbox section start=======/////////////-->
+                        <div class="box_group mt-2">
+                            <div class="box_list" id="fullBox">
+                                <input type="checkbox" name="list" class="check1" onclick="changeColor()"> 
+                                <span class="box_text">I have chronic malabsorption syndrome (problems absorbing food)</span>
+                            </div>
+                            <div class="box_list mt-2" id="fullBox2">
+                                <input type="checkbox" name="list" class="check1" onclick="changeColor2()"> 
+                                <span class="box_text">I have cholestasis</span>
+                            </div>
+                            <div class="box_list mt-2" id="fullBox3">
+                                <input type="checkbox" name="list" class="check1" onclick="changeColor3()"> 
+                                <span class="box_text">I’m currently being treated for cancer</span>
+                            </div>
+                            <div class="box_list mt-2" id="fullBox4">
+                                <input type="checkbox" name="list" class="check1" onclick="changeColor4()"> 
+                                <span class="box_text">I have diabetic retinopathy</span>
+                            </div>
+                            <div class="box_list mt-2" id="fullBox5">
+                                <input type="checkbox" name="list" class="check1" onclick="changeColor5()"> 
+                                <span class="box_text">I have severe heart failure</span>
+                            </div>
+                            <div class="box_list mt-2" id="fullBox6">
+                                <input type="checkbox" name="list" class="check1" onclick="changeColor6()"> 
+                                <span class="box_text">I have a family history of thyroid cancer and/or I’ve had thyroid cancer</span>
+                            </div>
+                            <div class="box_list mt-2" id="fullBox7">
+                                <input type="checkbox" name="list" class="check1" onclick="changeColor7()"> 
+                                <span class="box_text">I have Multiple endocrine neoplasia type 2 (MEN2)</span>
+                            </div>
+                            <div class="box_list mt-2" id="fullBox8">
+                                <input type="checkbox" name="list" class="check1" onclick="changeColor8()"> 
+                                <span class="box_text">I have a history of pancreatitis</span>
+                            </div>
+                            <div class="box_list mt-2" id="fullBox9">
+                                <input type="checkbox" name="list" class="check1" onclick="changeColor9()"> 
+                                <span class="box_text">I have or have had an eating disorder such as bulimia, anorexia nervosa, or a binge eating disorder</span>
+                            </div>
+                            <div class="box_list mt-2" id="fullBox10">
+                                <input type="checkbox" name="list" class="check1" onclick="changeColor10()"> 
+                                <span class="box_text">I have had surgery or an operation to my thyroid</span>
+                            </div>
+                            <div class="box_list mt-2" id="fullBox11">
+                                <input type="checkbox" name="list" class="check1" onclick="changeColor11()"> 
+                                <span class="box_text">I have had a bariatric operation such as gastric band or sleeve surgery</span>
+                            </div>
+                            <hr>
+                            <div class="box_list mt-2 mb-5" id="fullBox12">
+                                <input type="checkbox" name="list" class="check1" onclick="changeColor12()"> 
+                                <span class="box_text">None of these statements apply to me</span>
+                            </div>
+                        </div>
+                        <!--////////////========chekbox section END=======/////////////-->
+
+                        <!--////////////========Button section Start=======/////////////-->
+                        <div class="bottom_btn mt-5">
+                            <button class="btn_back"><a href="diagnosed_with_diabetes.html">Back</a></button>
+                            <button id="nextButton" class="btn_next" disabled><a href="conditions.html">Next <i class="fa-solid fa-arrow-right"></i></a></button>
+                        </div>
+                        <!--////////////========Button section END=======/////////////-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!--================================================================== What is your weight section End ============================================================================================================-->
+
+
+
+    <!-- ==================================================================coding End======================================================================================================== -->
+
+
+
+
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/lazyload.min.js"></script>
+    <script type="text/javascript" src="js/theme.js"></script>
+    <script src="js/my.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
